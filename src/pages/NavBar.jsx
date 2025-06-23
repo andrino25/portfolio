@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/NavBar.css';
 
 const NavBar = () => {
@@ -53,16 +54,16 @@ const NavBar = () => {
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`} ref={menuRef}>
           <li className="nav-item">
-            <a href="/" className="nav-link" onClick={closeMenu}>Home</a>
+            <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
           </li>
           <li className="nav-item">
-            <a href="/about" className="nav-link" onClick={closeMenu}>About</a>
+            <Link to="/about" className="nav-link" onClick={closeMenu}>About</Link>
           </li>
           <li className="nav-item">
-            <a href="/portfolio" className="nav-link" onClick={closeMenu}>Portfolio</a>
+            <Link to="/portfolio" className="nav-link" onClick={closeMenu}>Portfolio</Link>
           </li>
           <li className="nav-item">
-            <a href="/contact" className="nav-link" onClick={closeMenu}>Contact</a>
+            <Link to="/contact" className="nav-link" onClick={closeMenu}>Contact</Link>
           </li>
         </ul>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Home.css';
+import { Link } from 'react-router-dom';
 import { Github, Facebook, Instagram, Mail, ArrowRight, Download, Sparkles } from 'lucide-react';
 
 function Home() {
@@ -57,10 +58,10 @@ function Home() {
               <ArrowRight className="icon" />
             </a>
 
-            <a href="/portfolio" className="btn-secondary">
+            <Link to="/portfolio" className="btn-secondary">
               <Sparkles className="icon" />
               Explore Work
-            </a>
+            </Link>
           </div>
 
           <div className="socials">
